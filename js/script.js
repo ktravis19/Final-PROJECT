@@ -1,9 +1,21 @@
-console.log("testing");
-
-
 // Contact Form
 
-const form = document.querySelector ("#contact-form");
-const firstInput = document.querySelector ("name");
-const secondInput = document.querySelector ("email");
-const thirdInput = document.querySelector ("message");
+const form = getElementById("myName");
+const form = document.querySelector ("myEmail");
+const form = document.querySelector ("message");
+
+form.addEventListener("submit", (event) => { evnt.preventDefault ();
+	
+	sendData();
+});
+
+// DROPDOWN MENU
+
+const hamburgerMenuDropdown = document.getElementById ('hamburger-menu');
+
+hamburgerMenuDropdown.addEventListener ("click", displayhamburgerMenu);
+
+function displayhamburgerMenu (){
+	hamburgerMenuDropdown.classList.add("show");
+	hamburgerMenuDropdown.classList.remove("show");
+}
