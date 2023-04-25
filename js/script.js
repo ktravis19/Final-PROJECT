@@ -1,21 +1,21 @@
 // Contact Form
 
-const form = getElementById("myName");
-const form = document.querySelector ("myEmail");
-const form = document.querySelector ("message");
 
-form.addEventListener("submit", (event) => { evnt.preventDefault ();
-	
-	sendData();
-});
+const button = document.querySelector("#submit-button")
+
+button.addEventListener("click", function() {
+
+function sendData() alert("mailto:travisdesign@email.com")
+
+
 
 // DROPDOWN MENU
 
-const hamburgerMenuDropdown = document.getElementById ('hamburger-menu');
+const hamburgerIcon = document.getElementById ("hamburger-icon");
+const dropdownMenu = document.getElementById ("dropdown-menu")
 
-hamburgerMenuDropdown.addEventListener ("click", displayhamburgerMenu);
+hamburgerIcon.addEventListener ("click", dropdownMenu);
 
-function displayhamburgerMenu (){
-	hamburgerMenuDropdown.classList.add("show");
-	hamburgerMenuDropdown.classList.remove("show");
+function displayDropdownMenu (){
+	dropdownMenu.classList.add("show");
 }
